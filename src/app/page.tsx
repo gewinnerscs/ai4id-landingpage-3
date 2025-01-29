@@ -1,12 +1,12 @@
-import Header from "../../app/components/Header"
-import Hero from "../../app/components/Hero"
-import Solutions from "../../app/components/Solutions"
-import WhyChooseUs from "../../app/components/WhyChooseUs"
-import Portfolio from "../../app/components/Portfolio"
-import Team from "../../app/components/Team"
-import Contact from "../../app/components/Contact"
-import Footer from "../../app/components/Footer"
-import AnimatedBackground from "../../app/components/AnimatedBackground"
+import Header from "./components/Header"
+import Hero from "./components/Hero"
+import Solutions from "./components/Solutions"
+import WhyChooseUs from "./components/WhyChooseUs"
+import Portfolio from "./components/Portfolio"
+import Team from "./components/Team"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
+import AnimatedBackground from "./components/AnimatedBackground"
 
 export default function Home() {
   return (

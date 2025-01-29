@@ -36,7 +36,7 @@ const products = [
       "Use Gen-AI to analyze and predict gambling-related content.",
       "Generate detailed reports for actionable insights.",
     ],
-    image: "/lawanjudol_gewin.png",
+    image: "/lawan_gewin.png",
   },
   {
     name: "Voice the Customer",

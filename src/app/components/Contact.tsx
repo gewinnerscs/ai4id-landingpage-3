@@ -9,17 +9,17 @@ export default function Contact() {
           <div>
             <h3 className="text-2xl font-semibold mb-4 text-gray-800">Get in Touch</h3>
             <p className="text-gray-600 mb-6">
-              We'd love to hear from you. Please fill out the form below or reach out to us using the contact
+              We would love to hear from you. Please fill out the form below or reach out to us using the contact
               information provided.
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
                 <Mail className="w-6 h-6 text-blue-600 mr-2" />
-                <span className="text-gray-600">info@ai4indonesia.com</span>
+                <span className="text-gray-600">contact@ai4indonesia.id</span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-6 h-6 text-blue-600 mr-2" />
-                <span className="text-gray-600">+62 123 456 7890</span>
+                <span className="text-gray-600">+62 813 139 66682</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="w-6 h-6 text-blue-600 mr-2" />
