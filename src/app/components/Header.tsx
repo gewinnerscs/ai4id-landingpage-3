@@ -2,6 +2,12 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import { JetBrains_Mono } from "next/font/google"
+
+const jetBrains = JetBrains_Mono({
+  weight: ['700'],  // Bold weight for the title
+  subsets: ['latin'],
+})
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -28,7 +34,7 @@ export default function Header() {
       }`}
     >
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-white">
+        <Link href="/" className={`text-2xl font-bold text-white tracking-tight ${jetBrains.className}`}>
           AI4Indonesia
         </Link>
         <div className="hidden md:flex space-x-6">

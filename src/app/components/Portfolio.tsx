@@ -12,7 +12,7 @@ const products = [
       "Implement advanced machine learning for granular-level predictions.",
       "Integrate Gen-AI-powered chatbots for seamless data communication.",
     ],
-    image: "/geoplan_gewin.png",
+    image: "/GeoPlanGIF.gif",
   },
   {
     name: "TRACE.AI",
@@ -24,7 +24,7 @@ const products = [
       "Implement models to identify price anomalies.",
       "Deploy Gen-AI chatbots for data-driven decision support.",
     ],
-    image: "/trace_gewin.png",
+    image: "/TraceAI.gif",
   },
   {
     name: "#FightOnlineGambling",
@@ -36,7 +36,7 @@ const products = [
       "Use Gen-AI to analyze and predict gambling-related content.",
       "Generate detailed reports for actionable insights.",
     ],
-    image: "/lawan_gewin.png",
+    image: "/LawanJudol.png",
   },
   {
     name: "Voice the Customer",
