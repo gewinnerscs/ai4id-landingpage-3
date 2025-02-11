@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from 'next/image'
 import { JetBrains_Mono } from "next/font/google"
 
 const jetBrains = JetBrains_Mono({
@@ -34,8 +35,14 @@ export default function Header() {
       }`}
     >
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className={`text-2xl font-bold text-white tracking-tight ${jetBrains.className}`}>
-          AI4Indonesia
+        <Link href="/" className={`flex items-center space-x-2 text-2xl font-bold text-white tracking-tight ${jetBrains.className}`}>
+          <Image
+            src="/logo_putih.png"
+            alt="AI4Indonesia Logo"
+            width={40}
+            height={40}
+          />
+          <span>AI4Indonesia</span>
         </Link>
         <div className="hidden md:flex space-x-6">
           {["solutions", "portfolio", "team", "contact"].map((item) => (
