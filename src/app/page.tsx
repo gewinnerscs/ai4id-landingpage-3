@@ -1,12 +1,12 @@
-import Header from "./components/Header"
-import Hero from "./components/Hero"
-import Solutions from "./components/Solutions"
-import WhyChooseUs from "./components/WhyChooseUs"
-import Portfolio from "./components/Portfolio"
-import Team from "./components/Team"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
-import AnimatedBackground from "./components/AnimatedBackground"
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Solutions from "./components/Solutions";
+import WhyChooseUs from "./components/WhyChooseUs";
+import Portfolio from "./components/Portfolio";
+import Team from "./components/Team";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import AnimatedBackground from "./components/AnimatedBackground";
 
 export default function Home() {
   return (
@@ -33,6 +33,5 @@ export default function Home() {
       </section>
       <Footer />
     </div>
-  )
+  );
 }
-

@@ -1,51 +1,51 @@
-import { Cpu, MessageSquare, BugIcon as Spider } from "lucide-react"
+import { Cpu, MessageSquare, BugIcon as Spider } from "lucide-react";
 
 const solutions = [
   {
     title: "Gen-AI Chatbot",
     icon: MessageSquare,
-    impact: "Deliver personalized, real-time customer support to boost engagement and satisfaction.",
-    howItWorks: "Powered by RAG, in-context learning, and seamless system integration for accurate, dynamic responses.",
+    description: "Deliver personalized, real-time customer support to boost engagement and satisfaction. Powered by RAG, in-context learning, and seamless system integration.",
   },
   {
     title: "Predictive Analytics",
     icon: Cpu,
-    impact: "Optimize decisions with data-driven insights, reduce risks, and unlock growth opportunities.",
-    howItWorks: "Custom ML models, advanced feature engineering, and real-time analytics for precise forecasting.",
+    description: "Optimize decisions with data-driven insights, reduce risks, and unlock growth opportunities. Custom ML models and advanced feature engineering.",
   },
   {
     title: "Web Crawling",
     icon: Spider,
-    impact: "Efficiently gather and analyze vast amounts of web data to drive informed business strategies.",
-    howItWorks: "Scalable, intelligent crawling systems with advanced data extraction and processing capabilities.",
+    description: "Efficiently gather and analyze vast amounts of web data to drive informed business strategies. Scalable, intelligent crawling systems with advanced processing.",
   },
-]
+];
 
 export default function Solutions() {
   return (
-    <section className="py-20 px-4 bg-gray-100">
-      <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-800">Our Solutions</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="py-24 px-4 bg-black">
+      <div className="container mx-auto max-w-7xl">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our Solutions</h2>
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto">Empowering businesses with cutting-edge AI solutions that drive growth and innovation</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {solutions.map((solution, index) => (
-            <div key={index} className="bg-white rounded-lg p-6 shadow-lg transition-transform hover:scale-105">
-              <div className="flex items-center mb-4">
-                <solution.icon className="w-8 h-8 mr-3 text-blue-500" />
-                <h3 className="text-xl font-semibold text-gray-800">{solution.title}</h3>
-              </div>
-              <div className="mb-4">
-                <h4 className="text-lg font-medium mb-2 text-blue-600">Business Impact:</h4>
-                <p className="text-gray-600">{solution.impact}</p>
-              </div>
-              <div>
-                <h4 className="text-lg font-medium mb-2 text-blue-600">How It Works:</h4>
-                <p className="text-gray-600">{solution.howItWorks}</p>
+            <div key={index} className="relative group">
+              <div className="rounded-3xl bg-[#111111] p-8 h-full transition-all duration-300 hover:bg-[#161616]">
+                <h3 className="text-3xl font-bold text-white mb-4 tracking-tight">{solution.title}</h3>
+                <p className="text-gray-400 text-lg font-mono mb-12">{solution.description}</p>
+                <div className="relative h-48">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="relative w-32 h-32 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-lg transform rotate-45 opacity-80">
+                      <div className="absolute inset-0 flex items-center justify-center -rotate-45">
+                        <solution.icon className="w-12 h-12 text-white" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
-
