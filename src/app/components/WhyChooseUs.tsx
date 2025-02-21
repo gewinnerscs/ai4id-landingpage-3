@@ -20,10 +20,10 @@ const benefits = [
       icon: TrendingUp,
       label: "Process Efficiency",
       value: (
-        <div className="flex items-center">
+        <span className="flex items-center">
           <ArrowUp className="w-10 h-10 text-white mr-2" />
           <span className="text-[40px]">40%</span>
-        </div>
+        </span>
       ),
     },
   },
@@ -107,27 +107,27 @@ const benefits = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-12 bg-black text-white">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="text-center mb-10">
+    <section className="py-20 bg-black text-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
           <h2 className="text-[56px] leading-[1.1] font-extrabold mb-4 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-clip-text text-transparent max-w-4xl mx-auto font-geist-sans">Why Choose Us?</h2>
           <p className="text-[24px] leading-[1.6] font-normal text-white max-w-2xl mx-auto font-geist-sans">Empowering your business with innovative AI solutions</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit, index) => (
-            <div key={index} className="group p-5 rounded-2xl bg-[#111111] hover:bg-[#161616] transition-all duration-300 transform hover:-translate-y-2">
-              <div className="flex flex-col items-center text-center h-full">
-                <div className="w-14 h-14 rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center mb-4">
-                  <benefit.icon className="w-7 h-7 text-white" />
+            <div key={index} className="group p-8 rounded-2xl bg-[#111111] hover:bg-[#161616] transition-all duration-300 transform hover:-translate-y-2 min-h-[615px] flex flex-col justify-between">
+              <div className="flex flex-col items-center text-center">
+                <div className="mt-2.5 w-16 h-16 rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center mb-8">
+                  <benefit.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-[24px] font-bold mb-3 text-white">{benefit.title}</h3>
-                <p className="text-[16px] leading-relaxed text-gray-300 mb-6">{benefit.description}</p>
-                <div className="mt-auto flex flex-col items-center">
-                  <benefit.metric.icon className="w-7 h-7 text-gray-400 mb-2" />
-                  <p className="text-[20px] font-bold text-white mb-1">{benefit.metric.label}</p>
-                  <p className="text-[32px] font-extrabold text-white">{benefit.metric.value}</p>
-                </div>
+                <h3 className="text-[28px] font-bold mb-6 text-white">{benefit.title}</h3>
+                <p className="text-[20px] leading-relaxed text-gray-300">{benefit.description}</p>
+              </div>
+              <div className="mb-2.5 flex flex-col items-center">
+                <benefit.metric.icon className="w-8 h-8 text-gray-400 mb-4" />
+                <span className="text-[22px] font-bold text-white mb-3">{benefit.metric.label}</span>
+                {benefit.metric.value}
               </div>
             </div>
           ))}

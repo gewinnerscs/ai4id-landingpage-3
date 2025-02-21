@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-gray-800">
       <Header />
-      <div className="relative overflow-hidden bg-black text-white min-h-screen">
+      <div className="relative overflow-hidden bg-black text-white min-h-[85vh]">
         <AnimatedBackground />
         <div className="absolute inset-0 z-10">
           <Hero />
