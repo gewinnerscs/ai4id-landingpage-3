@@ -33,7 +33,7 @@ export default function Contact() {
       } else {
         throw new Error("Failed to send message");
       }
-    } catch (error) {
+    } catch {
       alert("Failed to send message. Please try again later.");
     } finally {
       setIsSubmitting(false);
