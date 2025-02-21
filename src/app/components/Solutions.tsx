@@ -1,4 +1,4 @@
-import { Bot, Brain, Search, MessageSquare, BrainCircuit, Database, Network, Sparkles, Cpu } from "lucide-react";
+import { Bot, BrainCircuit, Search } from "lucide-react";
 import Image from "next/image";
 
 const solutions = [
