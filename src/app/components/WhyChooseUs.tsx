@@ -1,4 +1,4 @@
-import { Brain, LineChart, Settings, Network, TrendingUp, Target, Wallet, Zap } from "lucide-react";
+import { Brain, LineChart, Settings, Network, TrendingUp, Target, Wallet, Zap, ArrowUp, ChevronRight } from "lucide-react";
 
 const benefits = [
   {
@@ -20,10 +20,10 @@ const benefits = [
       icon: TrendingUp,
       label: "Process Efficiency",
       value: (
-        <>
-          <span className="text-[18px] text-white mr-1">up to</span>
+        <div className="flex items-center">
+          <ArrowUp className="w-10 h-10 text-white mr-2" />
           <span className="text-[40px]">40%</span>
-        </>
+        </div>
       ),
     },
   },
@@ -46,10 +46,10 @@ const benefits = [
       icon: Target,
       label: "Decision Accuracy",
       value: (
-        <>
-          <span className="text-[18px] text-white mr-1">over</span>
+        <div className="flex items-center">
+          <ChevronRight className="w-10 h-10 text-white mr-2" />
           <span className="text-[40px]">70%</span>
-        </>
+        </div>
       ),
     },
   },
@@ -71,10 +71,10 @@ const benefits = [
       icon: Wallet,
       label: "Cost Reduction",
       value: (
-        <>
-          <span className="text-[18px] text-white mr-1">up to</span>
+        <div className="flex items-center">
+          <ArrowUp className="w-10 h-10 text-white mr-2" />
           <span className="text-[40px]">30%</span>
-        </>
+        </div>
       ),
     },
   },
@@ -96,10 +96,10 @@ const benefits = [
       icon: Zap,
       label: "Implementation Time",
       value: (
-        <>
-          <span className="text-[18px] text-white mr-1">over</span>
+        <div className="flex items-center">
+          <ChevronRight className="w-10 h-10 text-white mr-2" />
           <span className="text-[40px]">40%</span>
-        </>
+        </div>
       ),
     },
   },
